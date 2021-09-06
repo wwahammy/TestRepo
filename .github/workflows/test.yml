@@ -10,4 +10,4 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit -m "generated"
-          git push
+          git push HEAD:${{ github.ref }}
